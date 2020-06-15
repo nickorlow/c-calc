@@ -8,26 +8,26 @@ int main(int argc, char **argv)
 		printf("ERROR! Invalid Operator, Please Try Again!\n");
 	else
 		printf("Welcome to Calculator!\n");
-
+		
+	int one, two;
+	char op;
+	
 	printf("\nFirst Number:");
-	int one;
 	scanf("%d",&one);
 	
 	printf("\nSecond Number:");
-	int two;
 	scanf("%d",&two);
 	
 	printf("\nOperator:");
-	char onp;
-	scanf(" %c",&onp);
+	scanf(" %c",&op);
 	
-	int result = (int)calc(one, onp, two);
+	int result = (int)calc(one, op, two);
 	
 	//check for errors
 	if(result == NULL)
 		main(5, **argv);
 	else
-		printf("%i",result);
+		printf("Result: %i",result);
 		
     return 0;
 }

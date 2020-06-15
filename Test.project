@@ -93,7 +93,6 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="move.c"/>
     <File Name="main.c"/>
   </VirtualDirectory>
   <Dependencies Name="Debug"/>
